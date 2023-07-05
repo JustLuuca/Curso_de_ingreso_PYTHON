@@ -6,8 +6,8 @@ import customtkinter
 
 
 '''
-nombre:
-apellido:
+nombre:Luca
+apellido:Garcete
 ---
 Ejercicio: entrada_salida_01
 ---
@@ -19,7 +19,7 @@ Al presionar el  botón, se debe mostrar un mensaje como el siguiente "Esto no a
 class App(customtkinter.CTk):
 
     def __init__(self):
-        super().__init__(
+        super().__init__()
 
         # configure window
         self.title("UTN FRA")
@@ -29,7 +29,7 @@ class App(customtkinter.CTk):
         self.btn_mostrar.grid(row=2, pady=20, columnspan=2, sticky="nsew")
 
     def btn_mostrar_on_click(self):
-        pass
+        alert(title = "Alert", message = "Esto no anda, funciona")
 
 
 if __name__ == "__main__":
